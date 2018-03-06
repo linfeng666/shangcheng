@@ -1,0 +1,2 @@
+# 激活用户的有效期
+USER_ACTIVE_EXPIRES = 24*60*60

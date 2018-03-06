@@ -1,0 +1,12 @@
+签名：itsdangerous
+
+激活地址：域名+字符
+获取生成随机数用户（id）:data = {'user_id':4}
+序列化器：ts = TimedJSONWebSignatureSerializer（随机数，有效期）
+将数据转换为字符串：s = ts.dumps(data)
+逆向解析：ts.loads(s)
+
+导包
+创建序列化器
+获取生成随机数用户（id）
+调用序列化器的dumps（）方法生成签名byte类型字符
